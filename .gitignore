@@ -1,0 +1,13 @@
+public/
+resources/_gen/
+.hugo_build.lock
+.DS_Store
+node_modules/
+
+# Local Netlify folder
+.netlify
+.netlify/
+public/
+resources/
+.hugo_build.lock
+crawler_state.json

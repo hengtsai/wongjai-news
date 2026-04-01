@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="news-feed">
+  {{ $category := .Data.Singular }}
+  {{ $allPages := where .Site.RegularPages "Section" "news" }}
+  {{ $filtered := where $allPages ".Params.category" $category }}
+  {{ $sorted := $filtered.ByDate.Reverse }}
+  <h2 class="category-title">{{ .Title }}</h2>
+  {{ range first 100 $sorted }}
+  <article class="news-card">
+    <div class="card-header">
+      <span class="category-badge cat-{{ .Params.category }}">{{ .Params.category }}</span>
+      <span class="source">{{ .Params.source | default "" }}</span>
+      <time>{{ .Date.Format "15:04" }}</time>
+    </div>
+    <h2><a href="{{ .Params.original_url | default .RelPermalink }}" target="_blank" rel="noopener">{{ .Title }}</a></h2>
+    {{ with .Params.summary }}<p class="summary">{{ . }}</p>{{ end }}
+    {{ with .Params.tags }}
+    <div class="tags">
+      {{ range . }}<span class="tag">#{{ . }}</span>{{ end }}
+    </div>
+    {{ end }}
+  </article>
+  {{ end }}
+</div>
+{{ end }}

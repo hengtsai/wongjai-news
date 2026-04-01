@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }} | Wongjai News ⚡</title>
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="https://www.google.com/s2/favicons?domain=wongjai.com&sz=64">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="/" class="logo">⚡ Wongjai News</a>
+      <nav>
+        <a href="/" {{ if eq .RelPermalink "/" }}class="active"{{ end }}>首頁</a>
+        {{ $cats := dict "ai" "AI" "semiconductor" "半導體" "ev" "自駕/電動車" "economy" "經濟" "tech" "科技" "geopolitics" "地緣政治" "japan" "日本" }}
+        {{ range $slug, $label := $cats }}
+          <a href="/category/{{ $slug }}/">{{ $label }}</a>
+        {{ end }}
+      </nav>
+      <div class="header-right">
+        <div class="lang-switch">
+          <a href="https://news.wongjai.com/" {{ if eq .Site.Language.Lang "zh-tw" }}class="active"{{ end }}>繁</a>
+          <a href="https://zh-cn.news.wongjai.com/" {{ if eq .Site.Language.Lang "zh-cn" }}class="active"{{ end }}>简</a>
+          <a href="https://ja.news.wongjai.com/" {{ if eq .Site.Language.Lang "ja" }}class="active"{{ end }}>日</a>
+          <a href="https://en.news.wongjai.com/" {{ if eq .Site.Language.Lang "en" }}class="active"{{ end }}>EN</a>
+        </div>
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer>
+    <p>Wongjai News ⚡ | AI 自動更新 | 每 10 分鐘刷新</p>
+  </footer>
+
+  <script src="/js/theme.js"></script>
+</body>
+</html>

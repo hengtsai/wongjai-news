@@ -1,0 +1,31 @@
+baseURL = "https://news.wongjai.com/"
+languageCode = "zh-Hant-TW"
+title = "Wongjai News ⚡"
+theme = "wongjai-news"
+
+[languages]
+  [languages.zh-tw]
+    languageName = "繁體中文"
+    weight = 1
+    contentDir = "content/zh-tw"
+  [languages.zh-cn]
+    languageName = "简体中文"
+    weight = 2
+    contentDir = "content/zh-cn"
+  [languages.ja]
+    languageName = "日本語"
+    weight = 3
+    contentDir = "content/ja"
+  [languages.en]
+    languageName = "English"
+    weight = 4
+    contentDir = "content/en"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  description = "AI-powered news aggregator"
+  categories = ["AI", "半導體", "自駕/電動車", "經濟", "科技", "地緣政治", "日本"]
