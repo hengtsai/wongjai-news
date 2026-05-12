@@ -1,0 +1,71 @@
+[
+  {
+    "article": {
+      "title": "How LiteLLM Turned Developer Machines Into Credential Vaults for Attackers",
+      "content": "A security report reveals how LiteLLM proxy servers, used by developers to manage multiple AI models, can inadvertently expose API keys and credentials stored on developer machines. The vulnerability allows attackers to access sensitive credentials through misconfigured proxy servers.",
+      "category": "security"
+    },
+    "translations": [
+      {
+        "model": "gemini-2.5-flash",
+        "response_time": 3.7044012546539307,
+        "response_length": 40,
+        "chinese_title": "無法提取標題",
+        "full_response": "好的，這是一篇新聞文章的繁體中文翻譯：\n\n- Translated title:"
+      },
+      {
+        "model": "gemma-4-31b",
+        "response_time": 25.50968074798584,
+        "response_length": 2348,
+        "chinese_title": "[中文標題]",
+        "full_response": "*   Title: \"How LiteLLM Turned Developer Machines Into Credential Vaults for Attackers\"\n    *   Content: \"A security report reveals how LiteLLM proxy servers, used by developers to manage multiple AI models, can inadvertently expose API keys and credentials stored on developer machines. The vulnerability allows attackers to access sensitive credentials through misconfigured proxy servers.\"\n    *   Target Language: Traditional Chinese (繁體中文).\n    *   Output Format:\n        *   Translated title: [中文標題]\n        *   Translated summary: [中文摘要，約80字]\n        *   Translation quality notes: [簡短說明翻譯難點或特色]\n\n    *   *Title:* \"How LiteLLM Turned Developer Machines Into Credential Vaults for Attackers\"\n        *   \"LiteLLM\": Proper noun (keep as is).\n        *   \"Turned... Into\": 變成了 / 使...成為.\n        *   \"Developer Machines\": 開發者機器 / 開發者電腦.\n        *   \"Credential Vaults\": 憑證金庫 / 密鑰儲存庫.\n        *   \"Attackers\": 攻擊者.\n        *   *Draft 1:* LiteLLM 如何將開發者機器變成攻擊者的憑證金庫。\n        *   *Refinement:* \"Credential Vaults\" is a metaphor. In security contexts, \"憑證金庫\" is accurate.\n\n    *   *Content:* \"A security report reveals how LiteLLM proxy servers, used by developers to manage multiple AI models, can inadvertently expose API keys and credentials stored on developer machines. The vulnerability allows attackers to access sensitive credentials through misconfigured proxy servers.\"\n        *   \"Security report\": 安全報告.\n        *   \"LiteLLM proxy servers\": LiteLLM 代理伺服器.\n        *   \"Manage multiple AI models\": 管理多個 AI 模型.\n        *   \"Inadvertently expose\": 不經意地洩露 / 意外地暴露.\n        *   \"API keys and credentials\": API 金鑰與憑證.\n        *   \"Stored on developer machines\": 儲存在開發者機器上的.\n        *   \"Vulnerability\": 漏洞.\n        *   \"Misconfigured proxy servers\": 配置錯誤的代理伺服器.\n        *   *Draft 1:* 一份安全報告揭露了開發者用來管理多個 AI 模型的 LiteLLM 代理伺服器，如何不經意地洩露儲存在開發者機器上的 API 金鑰和憑證。該漏洞允許攻擊者透過配置錯誤的代理伺服器獲取敏感憑證。\n\n    *   *Title:* LiteLLM 如何讓開發者電腦淪為攻擊者的憑證金庫\n    *   *Summary:* 一份安全報告揭露，開發者用以管理多個 AI 模型的 LiteLLM 代理伺服器，可能會意外洩露儲存在本地電腦中的 API 金鑰與憑證。攻擊者可利用配置錯誤的代理伺服器，非法獲取這些敏感資訊。 (Approx 85 characters - close enough to 80).\n\n    *   *Notes:*\n        *   \"Credential Vaults\" translated as \"憑證金庫\" to maintain the metaphor.\n        *   \"Developer machines\" translated as \"開發者電腦\" for better flow in Chinese.\n        *   Ensured technical terms (API keys, proxy servers) are standard."
+      }
+    ]
+  },
+  {
+    "article": {
+      "title": "NVIDIA Announces Blackwell AI Platform with 5x Performance Boost",
+      "content": "NVIDIA has unveiled its next-generation Blackwell AI platform, claiming a 5x performance improvement over previous Hopper architecture. The new platform features advanced tensor cores and improved memory bandwidth, targeting large language model training and inference workloads.",
+      "category": "tech"
+    },
+    "translations": [
+      {
+        "model": "gemini-2.5-flash",
+        "response_time": 3.6958467960357666,
+        "response_length": 68,
+        "chinese_title": "輝達發表 Blackwell AI 平台，效",
+        "full_response": "Here is the translation:\n\n- Translated title: 輝達發表 Blackwell AI 平台，效"
+      },
+      {
+        "model": "gemma-4-31b",
+        "response_time": 28.512639045715332,
+        "response_length": 2771,
+        "chinese_title": "[中文標題]",
+        "full_response": "*   *Title:* NVIDIA Announces Blackwell AI Platform with 5x Performance Boost\n    *   *Content:* NVIDIA has unveiled its next-generation Blackwell AI platform, claiming a 5x performance improvement over previous Hopper architecture. The new platform features advanced tensor cores and improved memory bandwidth, targeting large language model training and inference workloads.\n    *   *Target Language:* Traditional Chinese (繁體中文).\n    *   *Output Format:*\n        *   Translated title: [中文標題]\n        *   Translated summary: [中文摘要，約80字]\n        *   Translation quality notes: [簡短說明翻譯難點或特色]\n\n    *   *Title:* \"NVIDIA Announces Blackwell AI Platform with 5x Performance Boost\"\n        *   NVIDIA $\\rightarrow$ NVIDIA (usually kept in English or translated as 輝達, but NVIDIA is standard in tech).\n        *   Blackwell AI Platform $\\rightarrow$ Blackwell AI 平台.\n        *   5x Performance Boost $\\rightarrow$ 效能提升 5 倍 / 效能增長 5 倍.\n        *   *Draft:* NVIDIA 發表 Blackwell AI 平台，效能提升 5 倍。\n\n    *   *Content:* \"NVIDIA has unveiled its next-generation Blackwell AI platform, claiming a 5x performance improvement over previous Hopper architecture. The new platform features advanced tensor cores and improved memory bandwidth, targeting large language model training and inference workloads.\"\n        *   \"unveiled its next-generation Blackwell AI platform\" $\\rightarrow$ 揭曉/發表了其次世代 Blackwell AI 平台.\n        *   \"claiming a 5x performance improvement over previous Hopper architecture\" $\\rightarrow$ 聲稱較前一代 Hopper 架構在效能上提升了 5 倍.\n        *   \"features advanced tensor cores and improved memory bandwidth\" $\\rightarrow$ 配備先進的 Tensor Core（張量核心）與提升的記憶體頻寬.\n        *   \"targeting large language model training and inference workloads\" $\\rightarrow$ 旨在針對大型語言模型的訓練與推論工作負載。\n        *   *Drafting the summary:* NVIDIA 發表了次世代 Blackwell AI 平台，聲稱效能較前代 Hopper 架構提升 5 倍。該平台搭載先進的 Tensor Core 並優化記憶體頻寬，專為大型語言模型的訓練與推論工作負載而設計。\n\n    *   *Title:* NVIDIA 發表 Blackwell AI 平台，效能大幅提升 5 倍\n    *   *Summary:* NVIDIA 揭曉次世代 Blackwell AI 平台，聲稱效能較前代 Hopper 架構提升 5 倍。該平台配備先進的 Tensor Core 與更強的記憶體頻寬，旨在優化大型語言模型的訓練與推論工作負載。 (Approx 75 characters - fits the ~80 word/char limit).\n\n    *   *Notes:*\n        *   Terminology: \"Tensor cores\" $\\rightarrow$ Tensor Core (standard) or 張量核心.\n        *   \"Inference\" $\\rightarrow$ 推論 (standard AI term).\n        *   \"Workloads\" $\\rightarrow$ 工作負載 (standard tech term).\n        *   \"Next-generation\" $\\rightarrow$ 次世代 (common in tech/gaming) or 下一代.\n\n    *   Translated title: NVIDIA 發表 Blackwell AI 平台，效能大幅提升 5 倍\n    *   Translated summary: NVIDIA 揭曉次世代 Blackwell AI 平台，聲稱效能較前代 Hopper 架構提升 5 倍。該平台配備先進的 Tensor Core 與更強的記憶體頻寬，旨在優化大型語言模型的訓練與推論工作負載。\n    *   Translation quality notes: 採用科技產業標準術語（如「推論」對應 inference、「工作負載」對應 workloads），並將 \"next-generation\" 譯為「次世代」以符合科技新聞的自然語感。"
+      }
+    ]
+  },
+  {
+    "article": {
+      "title": "Fed Signals Caution on Rate Cuts as Inflation Remains Sticky",
+      "content": "Federal Reserve officials have indicated they will proceed cautiously with interest rate cuts, as inflation data remains higher than expected. The central bank's latest minutes show policymakers are concerned about persistent price pressures in the services sector.",
+      "category": "finance"
+    },
+    "translations": [
+      {
+        "model": "gemini-2.5-flash",
+        "response_time": 3.2776708602905273,
+        "response_length": 35,
+        "chinese_title": "聯準會對降息持謹慎態度，因通膨",
+        "full_response": "- Translated title: 聯準會對降息持謹慎態度，因通膨"
+      },
+      {
+        "model": "gemma-4-31b",
+        "response_time": 21.179940938949585,
+        "response_length": 1894,
+        "chinese_title": "無法提取標題",
+        "full_response": "*   Title: \"Fed Signals Caution on Rate Cuts as Inflation Remains Sticky\"\n    *   Content: \"Federal Reserve officials have indicated they will proceed cautiously with interest rate cuts, as inflation data remains higher than expected. The central bank's latest minutes show policymakers are concerned about persistent price pressures in the services sector.\"\n    *   Target Language: Traditional Chinese (繁體中文).\n    *   Output Format:\n        *   Translated title.\n        *   Translated summary (approx. 80 characters).\n        *   Translation quality notes.\n\n    *   *Fed*: Federal Reserve $\\rightarrow$ 美聯儲 (common in mainland/global) or 美國聯準會 (standard in Taiwan). Since the request is for Traditional Chinese (often associated with Taiwan/HK), \"美國聯準會\" or \"聯準會\" is more natural.\n    *   *Signals Caution*: 表達謹慎 / 釋出謹慎訊號.\n    *   *Rate Cuts*: 降息.\n    *   *Inflation Remains Sticky*: 通膨依然具有黏性 / 通膨居高不下 / 通膨難以下降. \"Sticky\" in economics refers to prices/inflation that don't adjust quickly. \"黏性\" is the technical term, but \"居高不下\" is more natural for a general news headline.\n\n    *   *Federal Reserve officials have indicated they will proceed cautiously with interest rate cuts*: 聯準會官員表示，他們將謹慎採取降息行動.\n    *   *as inflation data remains higher than expected*: 因為通膨數據仍高於預期.\n    *   *The central bank's latest minutes show*: 央行最新的會議紀錄顯示.\n    *   *policymakers are concerned about persistent price pressures in the services sector*: 決策者對服務業持續存在的價格壓力感到擔憂.\n\n    *   *Title:* 通膨居高不下，聯準會釋出對降息持謹慎態度訊號 (A bit long). $\\rightarrow$ 通膨仍具黏性，聯準會對降息採取謹慎態度.\n    *   *Summary:* 聯準會官員表示，由於通膨數據高於預期，將謹慎處理降息進程。最新會議紀錄顯示，決策者對服務業持續的價格壓力深感憂慮。 (Approx 60 characters - fits the \"about 80\" requirement).\n\n    *   *Difficulty:* \"Sticky inflation\" is a technical term. Using \"黏性\" is accurate for finance, but \"居高不下\" is better for general readability.\n    *   *Terminology:* Used \"聯準會\" (Federal Reserve) and \"降息\" (Rate cuts)."
+      }
+    ]
+  }
+]

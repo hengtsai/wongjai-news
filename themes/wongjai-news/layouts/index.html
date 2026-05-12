@@ -1,0 +1,169 @@
+{{ define "main" }}
+<!-- news digest feed rendered by JS from /data/news.json -->
+<div class="feed" id="feed">
+  <div class="empty">
+    <p>⚡ Loading news…</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  /* ── config ─────────────────────────────── */
+  var LANG   = localStorage.getItem('wj-lang') || 'zh_tw';
+  var CAT    = 'all';
+  var DATA   = [];
+
+  /* Tab labels per language */
+  var TAB_LABELS = {
+    all:     { zh_tw:'全部', zh_cn:'全部', en:'All', ja:'すべて', ko:'전체' },
+    tech:    { zh_tw:'科技', zh_cn:'科技', en:'Tech', ja:'テクノロジー', ko:'기술' },
+    chip:    { zh_tw:'晶片／半導體', zh_cn:'芯片／半导体', en:'Chip/Semi', ja:'チップ／半導体', ko:'칩／반도체' },
+    finance: { zh_tw:'財經／投資', zh_cn:'财经／投资', en:'Finance', ja:'ファイナンス', ko:'금융／투자' },
+  };
+
+  /* Month names per language */
+  var MONTHS = {
+    zh_tw:['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'],
+    zh_cn:['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'],
+    en:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+    ja:['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'],
+    ko:['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+  };
+
+  /* ── fetch ──────────────────────────────── */
+  fetch('/data/news.json?t=' + Date.now())
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      DATA = (d || []).map(function(n){
+        // 獲取各語言標題，如果不存在則回退到英文
+        var title_en = n.title_en || '';
+        var title_zh = n.title_zh || n.title_zh_tw || title_en;
+        var title_zcn = n.title_zcn || title_zh;  // 簡體中文，如果沒有則回退到繁體
+        var title_ja = n.title_ja || title_en;    // 日文，如果沒有則回退到英文
+        var title_ko = n.title_ko || title_en;    // 韓文，如果沒有則回退到英文
+        
+        // 獲取各語言摘要，如果不存在則回退到英文或描述
+        var desc = n.desc || '';
+        var brief_en = n.s_en || desc || '';
+        var brief_zh = n.s_zh || n.s_zh_tw || brief_en;
+        var brief_zcn = n.s_zcn || brief_zh;      // 簡體中文摘要
+        var brief_ja = n.s_ja || brief_en;        // 日文摘要
+        var brief_ko = n.s_ko || brief_en;        // 韓文摘要
+        
+        return {
+          cat:    (n.cat || 'tech'),
+          source: n.so   || '',
+          url:    n.url  || '#',
+          time:   n.time || n.timestamp || '',
+          title:  { 
+            zh_tw: title_zh,   // 繁體中文標題
+            zh_cn: title_zcn,  // 簡體中文標題
+            en:    title_en,   // 英文標題
+            ja:    title_ja,   // 日文標題
+            ko:    title_ko    // 韓文標題
+          },
+          brief:  { 
+            zh_tw: brief_zh,   // 繁體中文摘要
+            zh_cn: brief_zcn,  // 簡體中文摘要
+            en:    brief_en,   // 英文摘要
+            ja:    brief_ja,   // 日文摘要
+            ko:    brief_ko    // 韓文摘要
+          },
+        };
+      });
+      DATA.sort(function(a,b){
+        var ta = new Date(a.time).getTime() || 0;
+        var tb = new Date(b.time).getTime() || 0;
+        return tb - ta;
+      });
+      render();
+    })
+    .catch(function(){
+      document.getElementById('feed').innerHTML =
+        '<div class="empty"><p>⚡ Failed to load news data.</p></div>';
+    });
+
+  /* ── helpers ────────────────────────────── */
+  function esc(s){ return s ? (''+s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') : ''; }
+
+  function formatTime(raw){
+    if(!raw) return '';
+    var d = new Date(raw);
+    if(isNaN(d.getTime())) return '';
+    // Use browser's built-in formatter where possible
+    try {
+      var locale = LANG === 'en' ? 'en-US' : LANG === 'ja' ? 'ja-JP' : LANG === 'ko' ? 'ko-KR' : LANG === 'zh_cn' ? 'zh-CN' : 'zh-TW';
+      return d.toLocaleString(locale, {
+        timeZone:'Asia/Taipei',
+        month:'short', day:'numeric',
+        hour:'2-digit', minute:'2-digit',
+        hour12: LANG === 'en' || LANG === 'ko' || LANG === 'ja'
+      }).replace(',','');
+    } catch(e){
+      // Manual fallback
+      var m = MONTHS[LANG] || MONTHS.zh_tw;
+      return m[d.getMonth()] + d.getDate() + ' ' + pad(d.getHours()) + ':' + pad(d.getMinutes());
+    }
+  }
+
+  function pad(v){ return v < 10 ? '0'+v : ''+v; }
+
+  /* ── render ─────────────────────────────── */
+  function render(){
+    // Update tab labels
+    document.querySelectorAll('.tab').forEach(function(b){
+      var k = b.getAttribute('data-cat');
+      var lbl = (TAB_LABELS[k]||{})[LANG] || TAB_LABELS[k].zh_tw;
+      if(lbl) b.textContent = lbl;
+    });
+
+    // Update lang buttons
+    document.querySelectorAll('.tool-btn[data-lang]').forEach(function(b){
+      b.classList.toggle('on', b.getAttribute('data-lang') === LANG);
+    });
+
+    var list = DATA.filter(function(n){ return CAT === 'all' || n.cat === CAT; });
+    var feed = document.getElementById('feed');
+    if(!list.length){
+      feed.innerHTML = '<div class="empty"><p>No news in this category.</p></div>';
+      return;
+    }
+
+    var html = '';
+    list.forEach(function(n){
+      var title  = n.title[LANG]  || n.title.en   || '';
+      var brief  = n.brief[LANG]  || n.brief.en   || '';
+      var source = n.source;
+      var time   = formatTime(n.time);
+
+      html += '<article class="news-item" data-category="'+esc(n.cat)+'">';
+      html += '  <div class="item-top">';
+      if(source) html += '<span class="item-source">'+esc(source)+'</span>';
+      if(time)   html += '<span class="item-time">'+time+'</span>';
+      html += '  </div>';
+      html += '  <div class="item-title"><a href="'+esc(n.url)+'" target="_blank" rel="noopener">'+esc(title)+'</a></div>';
+      if(brief)  html += '<div class="item-brief">'+esc(brief)+'</div>';
+      html += '</article>';
+    });
+    feed.innerHTML = html;
+  }
+
+  /* ── interactions ───────────────────────── */
+  window.setCat = function(cat){
+    CAT = cat;
+    document.querySelectorAll('.tab').forEach(function(b){
+      b.classList.toggle('active', b.getAttribute('data-cat') === cat);
+    });
+    render();
+  };
+
+  window.setLang = function(lang){
+    LANG = lang;
+    localStorage.setItem('wj-lang', lang);
+    render();
+  };
+
+  /* Initial render deferred until fetch completes (line 79) */
+})();
+</script>
+{{ end }}

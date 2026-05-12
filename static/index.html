@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wongjai News</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#f5f5f7;--c1:#fff;--tx:#1d1d1f;--mt:#86868b;--ac:#007aff;--r:12px}
+body{font:-apple-system,BlinkMacSystemFont,'segoe ui','noto sans tc',sans-serif;background:var(--bg);color:var(--tx);line-height:1.6}
+.hd{background:var(--c1);border-bottom:1px solid #e5e5e7;padding:18px 16px;text-align:center;position:sticky;top:0;z-index:100}
+.hd h1{font-size:22px;margin-bottom:2px}.hd .ht{color:var(--mt);font-size:12px;margin-bottom:10px}
+.ct{display:flex;justify-content:center;gap:6px;flex-wrap:wrap}
+.b{padding:5px 14px;border:1px solid #d2d2d7;border-radius:20px;background:var(--c1);color:var(--tx);font-size:12.5px;cursor:pointer;transition:all .15s}
+.b:hover{background:#e5e5ea}.b.a{background:var(--ac);color:#fff;border-color:var(--ac)}
+.dv{width:1px;background:#d2d2d7;align-self:stretch}
+.w{max-width:860px;margin:0 auto;padding:20px 16px}
+.sc{margin-bottom:36px}.sh{background:var(--tx);color:#fff;padding:10px 18px;border-radius:var(--r);font-size:16px;font-weight:700;margin-bottom:14px}
+.nc{background:var(--c1);border-radius:var(--r);padding:14px 18px;margin-bottom:8px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.nt{display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap}.nn{width:26px;height:26px;background:var(--ac);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0}
+.na{flex:1;font-size:14.5px;font-weight:600;color:var(--ac);text-decoration:none;word-break:break-word}.na:hover{text-decoration:underline}
+.ti{color:var(--mt);font-size:11px;flex-shrink:0;white-space:nowrap}.su{font-size:12.5px;color:var(--tx);margin:6px 0 4px;line-height:1.55}.so{color:var(--mt);font-size:11px}
+.em{text-align:center;color:var(--mt);padding:60px 20px;font-size:14px}.ft{text-align:center;padding:16px;color:var(--mt);font-size:11px;border-top:1px solid #e5e5e7;margin-top:32px}
+@media(max-width:600px){.hd h1{font-size:18px}.na{font-size:13px}.su{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="hd">
+  <h1>&#9889; Wongjai News</h1>
+  <div class="ht" id="ht"></div>
+  <div class="ct">
+    <button class="b a" onclick="FC('all')" id="b0">All</button>
+    <button class="b" onclick="FC('tech')" id="b1">Tech</button>
+    <button class="b" onclick="FC('econ')" id="b2">Econ</button>
+    <div class="dv"></div>
+    <button class="b a" onclick="SL('zh')" id="lz">zh-TW</button>
+    <button class="b" onclick="SL('en')" id="le">EN</button>
+    <button class="b" onclick="SL('zcn')" id="lc">zh-CN</button>
+    <button class="b" onclick="SL('ja')" id="lj">JA</button>
+  </div>
+</div>
+<div class="w" id="app">Loading...</div>
+<div class="ft" id="ft"></div>
+<script>
+(function(){
+  var C='all',L='zh',D=[];
+  function fmt(t){try{var d=new Date(+t);return d.toLocaleString('zh-TW',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false})}catch(e){return''}}
+  function esc(s){return s?s.replace(/&/g,'&amp;').replace(/</g,'&lt;'):''}
+  function render(){
+    var f=D.filter(function(n){return C==='all'||n.cat===C}).filter(function(n){return n.t&&n.t[L]});
+    f.sort(function(a,b){return(b.r||0)-(a.r||0)});
+    var g={},o=C==='all'?['tech','econ']:[C],h='';
+    f.forEach(function(n){if(!g[n.cat])g[n.cat]=[];g[n.cat].push(n)});
+    o.forEach(function(c){if(!g[c])return;
+      var lb={all:'All',tech:'Tech',econ:'Economy'};
+      h+='<div class="sc"><div class="sh">'+lb[c]+' ('+g[c].length+')</div>';
+      g[c].forEach(function(n,i){
+        h+='<div class="nc"><div class="nt"><span class="nn">'+(i+1)+'</span><a class="na" href="'+esc(n.u)+'" target="_blank" rel="noopener">'+esc(n.t[L])+'</a><span class="ti">'+fmt(n.ti)+'</span></div><div class="su">'+esc((n.s&&n.s[L])||'')+'</div><div class="so">'+esc(n.so||'')+'</div></div>';
+      });h+='</div>';});
+    document.getElementById('app').innerHTML=h||'<div class="em">No news yet.</div>';
+  }
+  window.FC=function(c){C=c;['b0','b1','b2'].forEach(function(id,j){document.getElementById(id).classList.toggle('a',['all','tech','econ'][j]===c)});render()};
+  window.SL=function(l){L=l;['lz','le','lc','lj'].forEach(function(id,j){document.getElementById(id).classList.toggle('a',['zh','en','zcn','ja'][j]===l)});render()};
+  var now=new Date(),o={timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false};
+  var ts=now.toLocaleString('zh-TW',o);
+  document.getElementById('ht').textContent=ts;
+  document.getElementById('ft').textContent=ts;
+  fetch('data/news.json?t='+Date.now()).then(function(r){return r.json()}).then(function(d){
+    D=d.map(function(n){return{cat:n.cat||'tech',t:{zh:n.title_zh||n.title_en,en:n.title_en,zcn:n.title_zcn||n.title_en,ja:n.title_ja||n.title_en},s:{zh:n.s_zh,n.en:n.s_en,zcn:n.s_zcn||n.s_en,ja:n.s_ja||n.s_en},so:n.so,u:n.url||'#',ti:n.time,r:parseFloat(n.rank||0)}});
+    render();
+  }).catch(function(e){document.getElementById('app').innerHTML='<div class="em">Failed to load: '+e.message+'</div>'});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article class="news-detail">
+  <div class="card-header">
+    {{ with .Params.category }}<span class="category-badge cat-{{ . }}">{{ . }}</span>{{ end }}
+    {{ with .Params.source }}<span class="source">{{ . }}</span>{{ end }}
+    <time>{{ .Date.Format "2006-01-02 15:04" }}</time>
+  </div>
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.summary }}<p class="summary">{{ . }}</p>{{ end }}
+  {{ with .Params.original_url }}<a href="{{ . }}" target="_blank" rel="noopener" class="read-original">閱讀原文 →</a>{{ end }}
+</article>
+{{ end }}

@@ -1,0 +1,4 @@
+baseURL = "https://test.com/"
+languageCode = "en"
+title = "Test"
+theme = "wongjai-news"

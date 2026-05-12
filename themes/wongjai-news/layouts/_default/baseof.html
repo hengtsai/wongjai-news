@@ -1,33 +1,45 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">
+<html lang="zh-TW">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ .Title }} | Wongjai News ⚡</title>
-  <meta name="color-scheme" content="light dark">
-  <link rel="icon" href="https://www.google.com/s2/favicons?domain=wongjai.com&sz=64">
+  <title>{{ .Title | default "Wongjai News" }}</title>
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#0d0f12">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.wongjai.com/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <header>
-    <div class="header-inner">
-      <a href="/" class="logo">⚡ Wongjai News</a>
-      <nav>
-        <a href="/" {{ if eq .RelPermalink "/" }}class="active"{{ end }}>首頁</a>
-        {{ $cats := dict "ai" "AI" "semiconductor" "半導體" "ev" "自駕/電動車" "economy" "經濟" "tech" "科技" "geopolitics" "地緣政治" "japan" "日本" }}
-        {{ range $slug, $label := $cats }}
-          <a href="/category/{{ $slug }}/">{{ $label }}</a>
-        {{ end }}
-      </nav>
-      <div class="header-right">
-        <div class="lang-switch">
-          <a href="https://news.wongjai.com/" {{ if eq .Site.Language.Lang "zh-tw" }}class="active"{{ end }}>繁</a>
-          <a href="https://zh-cn.news.wongjai.com/" {{ if eq .Site.Language.Lang "zh-cn" }}class="active"{{ end }}>简</a>
-          <a href="https://ja.news.wongjai.com/" {{ if eq .Site.Language.Lang "ja" }}class="active"{{ end }}>日</a>
-          <a href="https://en.news.wongjai.com/" {{ if eq .Site.Language.Lang "en" }}class="active"{{ end }}>EN</a>
-        </div>
-        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    <div class="header-row">
+      <div class="brand">
+        <h1>Wongjai<span class="brand-dot">News</span></h1>
+        <span class="brand-sub">Global Tech & Finance Digest</span>
       </div>
+      <div class="header-right">
+        <a class="tool-btn" href="mailto:ai@wongjai.com" title="聯絡我們">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </div>
+    </div>
+    <div class="lang-row">
+      <div class="lang-btns">
+        <button class="tool-btn on" data-lang="zh_tw" onclick="setLang('zh_tw')">繁中</button>
+        <button class="tool-btn" data-lang="zh_cn" onclick="setLang('zh_cn')">简体</button>
+        <button class="tool-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="tool-btn" data-lang="ja" onclick="setLang('ja')">日本語</button>
+        <button class="tool-btn" data-lang="ko" onclick="setLang('ko')">한국어</button>
+      </div>
+    </div>
+    <div class="tabs">
+      <button class="tab active" data-cat="all" onclick="setCat('all')">全部</button>
+      <button class="tab" data-cat="tech" onclick="setCat('tech')">科技</button>
+      <button class="tab" data-cat="chip" onclick="setCat('chip')">晶片／半導體</button>
+      <button class="tab" data-cat="finance" onclick="setCat('finance')">財經／投資</button>
     </div>
   </header>
 
@@ -36,7 +48,7 @@
   </main>
 
   <footer>
-    <p>Wongjai News ⚡ | AI 自動更新 | 每 10 分鐘刷新</p>
+    <p>Wongjai News ⚡ — 自動更新 ｜ 來源：TechNews, 中央社, NYTimes, Bloomberg, Reuters & more</p>
   </footer>
 
   <script src="/js/theme.js"></script>

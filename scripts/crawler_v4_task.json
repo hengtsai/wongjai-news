@@ -1,0 +1,134 @@
+你是 Wongjai News V4 爬蟲。
+
+## 🎯 任務
+從 7 個新聞網站**直接抓取全文**（不用 RSS），提取 50 字英文摘要，分類，然後**一次性 AI 批次翻譯**成繁體中文、簡體中文、日文。
+
+## 📰 來源網站（抓首頁）
+- TechCrunch: https://techcrunch.com/
+- Engadget: https://www.engadget.com/
+- CNBC Tech: https://www.cnbc.com/technology/
+- DigiTimes: https://www.digitimes.com/
+- Reuters Tech: https://www.reuters.com/technology/
+- WSJ Tech: https://www.wsj.com/news/technology
+- NYT Tech: https://www.nytimes.com/section/technology
+
+## 📁 分類（每篇選一個）
+- AI
+- 半導體
+- 電動車
+- 太空
+- 經濟
+- 科技
+- 地緣政治
+
+## 🚫 廣告過濾
+移除包含：promo code, coupon, X% off, best deal, tested and reviewed, gift guide, Rating:, at Amazon, best {product}, buy now
+每分類最多 **20 篇**，超額 skip。
+
+## 📝 執行步驟
+
+### Step 1: 抓取每個網站首頁
+用 `web_fetch(url, extractMode="text", maxChars=15000)` 抓取每個網站首頁。
+從結果中找出 10-20 個有意義的新聞文章 URL（排除導覽列、分類頁、登入頁）。
+
+### Step 2: 逐篇抓取全文
+對每篇文章 URL：
+1. `web_fetch(url, extractMode="text", maxChars=8000)` 抓取全文
+2. 如果內容太少（<300字），跳過
+3. 用 `classify()` 分類
+4. 如果是廣告，跳過
+5. 如果已存在於 `/Users/wongjai/.openclaw/workspace/wongjai-news/scripts/crawler_state_v4.json` 的 seen_urls，跳過
+6. 提取前 50 個英文單字作為 summary_en
+7. 收集所有有效文章
+
+### Step 3: 分類函數（Python 輔助或直接判斷）
+```python
+CATEGORIES = {
+    "AI": ["artificial intelligence", "ai ", "llm", "gpt", "claude", "gemini", "machine learning", "deep learning", "openai", "anthropic", "generative ai", "chatbot", "ai chip", "agi", "grok", "large language model", "neural network"],
+    "半導體": ["semiconductor", "tsmc", "intel", "amd", "nvidia", "qualcomm", "chip", "fab", "foundry", "wafer", "euv", "asml", "advanced node"],
+    "電動車": ["electric vehicle", " ev ", "tesla", "byd", "rivian", "lucid", "autonomous", "self-driving", "battery", "ev adoption", "xpeng", "nio"],
+    "太空": ["spacex", "rocket", "satellite", "starlink", "nasa", "artemis", "space exploration", "mars", "moon mission", "launch", "blue origin"],
+    "經濟": ["inflation", "interest rate", "federal reserve", "gdp", "recession", "economic", "tariff", "trade war", "fed", "treasury", "wall street", "stock market"],
+    "科技": ["apple", "google", "microsoft", "amazon", "meta", "cloud computing", "cybersecurity", "smartphone", "tech company"],
+    "地緣政治": ["ukraine", "russia", "iran", "geopolitics", "military", "defense", "sanctions", "nato", "taiwan", "south china sea", "cross-strait"],
+}
+```
+判斷方法：標題+全文中哪個分類的關鍵字命中最多。
+
+### Step 4: 一次性批次翻譯 ⭐ 重點 ⭐
+將所有文章打包成以下 JSON，**一次**發送翻譯請求：
+
+**用這個工具翻譯**:
+```python
+python3 << 'PYEOF'
+from deep_translator import GoogleTranslator
+import json, sys
+
+batch = json.load(sys.stdin)  # list of {id, title, summary}
+
+t_zh = GoogleTranslator(source='auto', target='zh-TW')
+t_cn = GoogleTranslator(source='auto', target='zh-CN')
+t_ja = GoogleTranslator(source='auto', target='ja')
+
+def ts(t, text):
+    try: return t.translate(text[:2000])
+    except: return text
+
+results = []
+for item in batch:
+    title = item["title"]
+    summary = item["summary"]
+    results.append({
+        "id": item["id"],
+        "title_zh_tw": ts(t_zh, title).replace('"', "'"),
+        "title_zh_cn": ts(t_cn, title).replace('"', "'"),
+        "title_ja": ts(t_ja, title).replace('"', "'"),
+        "summary_zh_tw": ts(t_zh, summary).replace('"', "'"),
+        "summary_zh_cn": ts(t_cn, summary).replace('"', "'"),
+        "summary_ja": ts(t_ja, summary).replace('"', "'"),
+    })
+
+print(json.dumps(results, ensure_ascii=False, indent=2))
+PYEOF
+```
+
+### Step 5: 生成 Hugo Markdown
+每篇文章一個檔案，路徑：`/Users/wongjai/.openclaw/workspace/wongjai-news/content/news/YYYYMMDD-{id12hash}-{slug}.md`
+
+格式：
+```yaml
+---
+title: "原文標題"
+date: ""
+source: "來源網站名"
+category: "分類"
+original_url: "原文URL"
+title_en: "原文標題"
+title_zh_tw: "翻譯標題"
+title_zh_cn: "简中标题"
+title_ja: "日本語タイトル"
+summary_en: "50字摘要"
+summary_zh_tw: "翻譯摘要"
+summary_zh_cn: "翻译摘要"
+summary_ja: "日本語要約"
+draft: false
+---
+
+全文內容（前1000字）
+```
+
+### Step 6: 清理
+- 先清空 `/Users/wongjai/.openclaw/workspace/wongjai-news/content/news/` 所有 .md
+- 每分類最多 20 篇
+- 更新 state file: `/Users/wongjai/.openclaw/workspace/wongjai-news/scripts/crawler_state_v4.json` → 寫入 seen_urls 列表
+
+## 🔑 重點提醒
+1. **不用 RSS** — 用 `web_fetch` 抓首頁 HTML，找出文章連結
+2. **抓全文** — 每篇文章用 `web_fetch` 提取全文
+3. **50字英文摘要** — 從全文前 50 個單字提取
+4. **一次性翻譯** — 所有文章集中後，**只做一次**翻譯 API 呼叫
+5. **先過濾再翻譯** — 節省 token
+6. **DigiTimes & Reuters & WSJ** — 這些網站可能有反爬蟲機制，如果抓取失敗就用標題/描述做備用
+7. **先清空舊文章** — 從頭開始
+
+開始執行吧！先回報你抓到了幾個網站、多少篇文章，然後再翻譯。
