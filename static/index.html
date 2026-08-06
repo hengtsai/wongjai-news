@@ -38,6 +38,7 @@ body{font:-apple-system,BlinkMacSystemFont,'segoe ui','noto sans tc',sans-serif;
     <button class="b" onclick="SL('en')" id="le">EN</button>
     <button class="b" onclick="SL('zcn')" id="lc">zh-CN</button>
     <button class="b" onclick="SL('ja')" id="lj">JA</button>
+    <button class="b" onclick="SL('ko')" id="lk">KO</button>
   </div>
 </div>
 <div class="w" id="app">Loading...</div>
@@ -61,13 +62,13 @@ body{font:-apple-system,BlinkMacSystemFont,'segoe ui','noto sans tc',sans-serif;
     document.getElementById('app').innerHTML=h||'<div class="em">No news yet.</div>';
   }
   window.FC=function(c){C=c;['b0','b1','b2'].forEach(function(id,j){document.getElementById(id).classList.toggle('a',['all','tech','econ'][j]===c)});render()};
-  window.SL=function(l){L=l;['lz','le','lc','lj'].forEach(function(id,j){document.getElementById(id).classList.toggle('a',['zh','en','zcn','ja'][j]===l)});render()};
+  window.SL=function(l){L=l;['lz','le','lc','lj','lk'].forEach(function(id,j){document.getElementById(id).classList.toggle('a',['zh','en','zcn','ja','ko'][j]===l)});render()};
   var now=new Date(),o={timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false};
   var ts=now.toLocaleString('zh-TW',o);
   document.getElementById('ht').textContent=ts;
   document.getElementById('ft').textContent=ts;
   fetch('data/news.json?t='+Date.now()).then(function(r){return r.json()}).then(function(d){
-    D=d.map(function(n){return{cat:n.cat||'tech',t:{zh:n.title_zh||n.title_en,en:n.title_en,zcn:n.title_zcn||n.title_en,ja:n.title_ja||n.title_en},s:{zh:n.s_zh,n.en:n.s_en,zcn:n.s_zcn||n.s_en,ja:n.s_ja||n.s_en},so:n.so,u:n.url||'#',ti:n.time,r:parseFloat(n.rank||0)}});
+    D=d.map(function(n){return{cat:n.cat||'tech',t:{zh:n.title_zh||n.title_en,en:n.title_en,zcn:n.title_zcn||n.title_en,ja:n.title_ja||n.title_en,ko:n.title_ko||n.title_en},s:{zh:n.s_zh||n.s_en,en:n.s_en,zcn:n.s_zcn||n.s_en,ja:n.s_ja||n.s_en,ko:n.s_ko||n.s_en},so:n.so,u:n.url||'#',ti:n.time,r:parseFloat(n.rank||0)}});
     render();
   }).catch(function(e){document.getElementById('app').innerHTML='<div class="em">Failed to load: '+e.message+'</div>'});
 })();
