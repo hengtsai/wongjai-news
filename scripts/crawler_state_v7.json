@@ -1,21 +1,5 @@
 {
   "seen": {
-    "https://www.nytimes.com/2026/08/29/us/politics/el-sayed-apology-jewish-democrats.html": "2026-08-29T20:00:23.344246+00:00",
-    "https://www.nytimes.com/2026/08/29/us/politics/milo-yiannopoulos-deported.html": "2026-08-29T20:00:23.344246+00:00",
-    "https://www.nytimes.com/2026/08/29/world/asia/nepal-flood-hydropower-tunnels-rescue-missing-workers.html": "2026-08-29T20:00:23.344246+00:00",
-    "https://www.nytimes.com/2026/08/29/travel/flash-flood-nepal-global-warming-himalayas.html": "2026-08-29T20:00:23.344246+00:00",
-    "https://www.bbc.co.uk/news/articles/cvgy79wmv4jo?at_medium=RSS&at_campaign=rss": "2026-08-29T20:00:23.344246+00:00",
-    "https://www.bbc.co.uk/news/articles/cvgym9rz07zo?at_medium=RSS&at_campaign=rss": "2026-08-29T20:00:23.344246+00:00",
-    "https://www.bbc.co.uk/news/articles/c75gyw0nkzno?at_medium=RSS&at_campaign=rss": "2026-08-29T20:00:23.344246+00:00",
-    "https://www.aljazeera.com/news/2026/8/29/us-says-far-right-provocateur-milo-yiannopoulos-has-been-deported-to-uk?traffic_source=rss": "2026-08-29T20:00:23.344246+00:00",
-    "https://www.aljazeera.com/video/newsfeed/2026/8/29/tunisians-desperate-for-water-as-taps-run-dry?traffic_source=rss": "2026-08-29T20:00:23.344246+00:00",
-    "https://www.aljazeera.com/news/2026/8/29/us-judge-rules-against-trumps-effort-to-deport-pro-palestinian-students?traffic_source=rss": "2026-08-29T20:00:23.344246+00:00",
-    "https://www.aljazeera.com/news/2026/8/29/haitian-gangs-release-13-captives-after-mass-kidnapping-in-kenscoff?traffic_source=rss": "2026-08-29T20:00:23.344246+00:00",
-    "https://www.aljazeera.com/news/2026/8/29/pakistan-suspends-eight-officials-over-hospital-fire-that-killed-14-babies?traffic_source=rss": "2026-08-29T20:00:23.344246+00:00",
-    "https://www.aljazeera.com/video/newsfeed/2026/8/29/dr-congo-begins-vaccinating-against-largest-and-deadliest-ebola-outbreak?traffic_source=rss": "2026-08-29T20:00:23.344246+00:00",
-    "https://www.aljazeera.com/video/newsfeed/2026/8/29/sudans-date-palm-trees-under-threat-from-drought-and-wildfires?traffic_source=rss": "2026-08-29T20:00:23.344246+00:00",
-    "https://www.theverge.com/policy/986456/milo-yiannopoulos-deported-ice": "2026-08-29T20:00:23.344246+00:00",
-    "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright": "2026-08-29T20:00:23.344246+00:00",
     "https://www.nytimes.com/2026/08/29/business/kevin-warsh-inflation-rates-fed.html": "2026-08-29T22:00:35.931879+00:00",
     "https://www.nytimes.com/2026/08/29/world/asia/modi-india-deals-trump.html": "2026-08-29T22:00:35.931879+00:00",
     "https://www.nytimes.com/2026/08/29/world/americas/venezuela-oil-us-takeover.html": "2026-08-29T22:00:35.931879+00:00",
@@ -2182,7 +2166,18 @@
     "https://www.aljazeera.com/news/2026/9/5/thousands-protest-in-croatia-to-demand-government-clean-up-toxic-waste?traffic_source=rss": "2026-09-05T20:00:14.473669+00:00",
     "https://www.aljazeera.com/news/2026/9/5/russias-putin-meets-us-envoys-to-discuss-trump-proposal-to-end-ukraine-war?traffic_source=rss": "2026-09-05T20:00:14.473669+00:00",
     "https://www.aljazeera.com/sports/2026/9/5/india-crush-pakistan-at-t20-asia-cup-with-record-breaking-bowling-display?traffic_source=rss": "2026-09-05T20:00:14.473669+00:00",
-    "https://www.aljazeera.com/video/newsfeed/2026/9/5/09-05-germany-afd-state-elections-sv?traffic_source=rss": "2026-09-05T20:00:14.473669+00:00"
+    "https://www.aljazeera.com/video/newsfeed/2026/9/5/09-05-germany-afd-state-elections-sv?traffic_source=rss": "2026-09-05T20:00:14.473669+00:00",
+    "https://www.nytimes.com/2026/09/05/science/space/is-there-alien-debris-on-the-moon-some-scientists-plan-to-find-out.html": "2026-09-05T22:00:26.796090+00:00",
+    "https://www.bbc.co.uk/news/articles/cp301rw6kvro?at_medium=RSS&at_campaign=rss": "2026-09-05T22:00:26.796090+00:00",
+    "https://www.bbc.co.uk/news/articles/c5y7gk9knnlo?at_medium=RSS&at_campaign=rss": "2026-09-05T22:00:26.796090+00:00",
+    "https://www.aljazeera.com/video/newsfeed/2026/9/5/us-envoys-witkoff-kushner-meet-putin-for-talks-on-ukraine-war?traffic_source=rss": "2026-09-05T22:00:26.796090+00:00",
+    "https://www.aljazeera.com/video/newsfeed/2026/9/5/09-05-sv-india-building-collapse-mp4?traffic_source=rss": "2026-09-05T22:00:26.796090+00:00",
+    "https://www.aljazeera.com/video/inside-story/2026/9/5/why-is-argentina-reigniting-the-falklands-dispute?traffic_source=rss": "2026-09-05T22:00:26.796090+00:00",
+    "https://www.aljazeera.com/sports/2026/9/5/everton-vs-manchester-united-premier-league-prediction-teams-lineups?traffic_source=rss": "2026-09-05T22:00:26.796090+00:00",
+    "https://www.aljazeera.com/news/2026/9/5/colombian-government-reports-three-killed-in-rebel-attack-on-military-post?traffic_source=rss": "2026-09-05T22:00:26.796090+00:00",
+    "https://www.aljazeera.com/video/newsfeed/2026/9/5/al-jazeera-reporter-challenges-huckabee-over-israeli-settler-pogroms?traffic_source=rss": "2026-09-05T22:00:26.796090+00:00",
+    "https://www.theverge.com/tech/990873/earth-garden-globe-field-recordings": "2026-09-05T22:00:26.796090+00:00",
+    "https://www.theverge.com/tech/990868/iphone-handoff-ios-27": "2026-09-05T22:00:26.796090+00:00"
   },
-  "last_success": "2026-09-06T04:00:26.248398"
+  "last_success": "2026-09-06T06:00:39.712883"
 }
