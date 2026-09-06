@@ -1,18 +1,5 @@
 {
   "seen": {
-    "https://technews.tw/2026/08/30/china-wednesday-leave-trending/": "2026-08-30T08:00:38.622396+00:00",
-    "https://technews.tw/2026/08/30/amazon-uber-doordash-walmart-ignite-drone-delivery-war/": "2026-08-30T08:00:38.622396+00:00",
-    "https://technews.tw/2026/08/30/the-pentagons-report-revealed-the-lifecycle-cost-of-f35s-has-droped/": "2026-08-30T08:00:38.622396+00:00",
-    "https://technews.tw/2026/08/30/ai-power-hungry-nature-forces-global-grid-overhaul-world-scrambles-transformers-taiwanese-firms-emerge-fast-delivery/": "2026-08-30T08:00:38.622396+00:00",
-    "https://technews.tw/2026/08/30/quantum-experiment-scientists-break-long-held-x-ray-energy-limit/": "2026-08-30T08:00:38.622396+00:00",
-    "https://www.nytimes.com/2026/08/30/world/asia/tibet-nepal-flood-death-toll-china.html": "2026-08-30T08:00:38.622396+00:00",
-    "https://www.bbc.co.uk/news/articles/c9qr750je1go?at_medium=RSS&at_campaign=rss": "2026-08-30T08:00:38.622396+00:00",
-    "https://www.aljazeera.com/news/2026/8/30/iceland-rejects-eu-membership-plan-in-referendum?traffic_source=rss": "2026-08-30T08:00:38.622396+00:00",
-    "https://www.aljazeera.com/opinions/2026/8/30/the-toxic-waste-of-the-gaza-war-has-reached-israel?traffic_source=rss": "2026-08-30T08:00:38.622396+00:00",
-    "https://www.aljazeera.com/news/2026/8/30/nepal-rescuers-drill-into-tunnels-in-bid-to-reach-trapped-workers?traffic_source=rss": "2026-08-30T08:00:38.622396+00:00",
-    "https://www.aljazeera.com/sports/2026/8/30/ethiopias-gobena-kenyas-olympic-champion-jepchirchir-win-sydney-marathon?traffic_source=rss": "2026-08-30T08:00:38.622396+00:00",
-    "https://www.aljazeera.com/sports/2026/8/30/messi-scores-four-goals-inspires-inter-miami-to-7-1-win-over-montreal?traffic_source=rss": "2026-08-30T08:00:38.622396+00:00",
-    "https://www.aljazeera.com/sports/2026/8/30/hrgovic-wins-ibf-world-heavyweight-boxing-title-as-itauma-hospitalised?traffic_source=rss": "2026-08-30T08:00:38.622396+00:00",
     "https://www.tomshardware.com/tech-industry/drones/us-military-uses-high-energy-lasers-to-shoot-down-three-mexican-cartel-drones-over-the-southern-border-narcos-suspected-of-using-uavs-for-surveillance-and-reconnaissance-to-support-illegal-activities": "2026-08-30T10:00:51.696914+00:00",
     "https://technews.tw/2026/08/30/weather-radar-satellite-typhoon/": "2026-08-30T10:00:51.696914+00:00",
     "https://technews.tw/2026/08/30/sea-machines-robotocs-took-only-9-days-transferring-large-commercial-supply-ship-into-autonomous-ship-for-us-army/": "2026-08-30T10:00:51.696914+00:00",
@@ -2176,7 +2163,25 @@
     "https://www.aljazeera.com/sports/2026/9/6/irelands-boxing-great-katie-taylor-bows-out-as-undisputed-champion?traffic_source=rss": "2026-09-06T08:00:30.042360+00:00",
     "https://www.aljazeera.com/news/2026/9/6/egyptian-tv-presenter-sentenced-to-death-in-major-drug-case?traffic_source=rss": "2026-09-06T08:00:30.042360+00:00",
     "https://www.aljazeera.com/sports/2026/9/6/fifas-infantino-avoids-questions-on-his-future-amid-growing-uncertainty?traffic_source=rss": "2026-09-06T08:00:30.042360+00:00",
-    "https://www.aljazeera.com/video/newsfeed/2026/9/6/uk-has-billions-in-contracts-with-firms-tied-to-illegal-israeli-settlements-4?traffic_source=rss": "2026-09-06T08:00:30.042360+00:00"
+    "https://www.aljazeera.com/video/newsfeed/2026/9/6/uk-has-billions-in-contracts-with-firms-tied-to-illegal-israeli-settlements-4?traffic_source=rss": "2026-09-06T08:00:30.042360+00:00",
+    "https://technews.tw/2026/09/06/anthropic-ipo-launch-shifts-toward-mid-october/": "2026-09-06T10:00:43.533152+00:00",
+    "https://technews.tw/2026/09/06/new-cell-protective-layer/": "2026-09-06T10:00:43.533152+00:00",
+    "https://technews.tw/2026/09/06/remove-bad-youtube-recommendations/": "2026-09-06T10:00:43.533152+00:00",
+    "https://www.nytimes.com/2026/09/06/us/politics/hegseth-army-general-donahue.html": "2026-09-06T10:00:43.533152+00:00",
+    "https://www.nytimes.com/2026/09/06/us/memphis-cantina-gambling-raid-immigration.html": "2026-09-06T10:00:43.533152+00:00",
+    "https://www.nytimes.com/2026/09/06/world/europe/ukraine-zelensky-witkoff-kushner-russia-putin.html": "2026-09-06T10:00:43.533152+00:00",
+    "https://www.nytimes.com/2026/09/06/world/europe/ukraine-war-weapons-fraud-corruption.html": "2026-09-06T10:00:43.533152+00:00",
+    "https://www.nytimes.com/2026/09/06/world/europe/ukraine-military-audits-spending-weapons.html": "2026-09-06T10:00:43.533152+00:00",
+    "https://www.nytimes.com/2026/09/06/us/politics/trump-miderm-elections-republicans.html": "2026-09-06T10:00:43.533152+00:00",
+    "https://www.nytimes.com/2026/09/06/us/elections/trump-mail-in-voting-confusion.html": "2026-09-06T10:00:43.533152+00:00",
+    "https://www.nytimes.com/2026/09/06/us/politics/pappas-sununu-new-hampshire-senate.html": "2026-09-06T10:00:43.533152+00:00",
+    "https://www.nytimes.com/2026/09/06/business/iran-us-strait-of-hormuz-shipping.html": "2026-09-06T10:00:43.533152+00:00",
+    "https://www.nytimes.com/2026/09/06/science/92-year-old-mathematician-apprentice.html": "2026-09-06T10:00:43.533152+00:00",
+    "https://www.aljazeera.com/features/2026/9/6/israeli-flags-become-the-latest-weapon-of-settlers-in-west-bank-domination?traffic_source=rss": "2026-09-06T10:00:43.533152+00:00",
+    "https://www.aljazeera.com/news/2026/9/6/israeli-air-attacks-on-lebanon-kill-at-least-four?traffic_source=rss": "2026-09-06T10:00:43.533152+00:00",
+    "https://www.aljazeera.com/video/newsfeed/2026/9/6/israel-bombards-several-towns-in-southern-lebanon?traffic_source=rss": "2026-09-06T10:00:43.533152+00:00",
+    "https://www.aljazeera.com/sports/2026/9/6/zverev-and-gauff-ease-into-us-open-last-16-but-alex-eala-falls-to-jovic?traffic_source=rss": "2026-09-06T10:00:43.533152+00:00",
+    "https://www.aljazeera.com/video/by-the-numbers-3/2026/9/6/how-do-you-arrest-50000-people-quietly?traffic_source=rss": "2026-09-06T10:00:43.533152+00:00"
   },
-  "last_success": "2026-09-06T16:00:43.223740"
+  "last_success": "2026-09-06T18:00:55.933550"
 }
