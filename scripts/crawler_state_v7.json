@@ -1,18 +1,5 @@
 {
   "seen": {
-    "https://openai.com/index/an-alien-mind": "2026-09-06T18:00:32.785611+00:00",
-    "https://www.nytimes.com/2026/09/06/technology/ai-chips-china-blacklist.html": "2026-09-06T18:00:32.785611+00:00",
-    "https://www.bbc.co.uk/news/articles/cy4zejgz3z9o?at_medium=RSS&at_campaign=rss": "2026-09-06T18:00:32.785611+00:00",
-    "https://www.bbc.co.uk/news/articles/cp8d56w7d9po?at_medium=RSS&at_campaign=rss": "2026-09-06T18:00:32.785611+00:00",
-    "https://www.aljazeera.com/gallery/2026/9/6/photos-nepal-flood-survivors-face-overwhelming-devastation?traffic_source=rss": "2026-09-06T18:00:32.785611+00:00",
-    "https://www.aljazeera.com/sports/2026/9/6/f1-leader-kimi-antonelli-wins-italian-gp-after-epic-charge-from-the-back?traffic_source=rss": "2026-09-06T18:00:32.785611+00:00",
-    "https://www.aljazeera.com/features/2026/9/6/palestinian-farmers-battle-settler-sabotage-to-save-hebron-crops-livestock?traffic_source=rss": "2026-09-06T18:00:32.785611+00:00",
-    "https://www.aljazeera.com/news/2026/9/6/trump-official-says-there-may-not-be-a-nuclear-agreement-with-iran?traffic_source=rss": "2026-09-06T18:00:32.785611+00:00",
-    "https://www.aljazeera.com/sports/2026/9/6/lamine-yamal-and-fermin-lopez-star-as-barcelona-run-riot-at-valencia?traffic_source=rss": "2026-09-06T18:00:32.785611+00:00",
-    "https://www.aljazeera.com/news/2026/9/6/iran-touts-military-response-as-us-maintains-blockade-hits-tankers?traffic_source=rss": "2026-09-06T18:00:32.785611+00:00",
-    "https://www.aljazeera.com/news/2026/9/6/far-right-afd-wins-vote-in-germanys-saxony-anhalt-state-exit-polls?traffic_source=rss": "2026-09-06T18:00:32.785611+00:00",
-    "https://www.aljazeera.com/sports/2026/9/6/maitland-niles-stuns-manchester-united-as-everton-claim-last-ditch-point?traffic_source=rss": "2026-09-06T18:00:32.785611+00:00",
-    "https://www.theverge.com/tech/990895/boox-picco-tiny-e-reader-november-ifa": "2026-09-06T18:00:32.785611+00:00",
     "https://www.teslarati.com/tesla-crosses-major-unsupervised-self-driving-milestone/": "2026-09-06T20:00:45.208687+00:00",
     "https://www.nytimes.com/2026/09/06/us/plane-crash-amazon-miami-airport.html": "2026-09-06T20:00:45.208687+00:00",
     "https://www.bbc.co.uk/news/videos/c5yegd6ldy6o?at_medium=RSS&at_campaign=rss": "2026-09-06T20:00:45.208687+00:00",
@@ -2103,7 +2090,19 @@
     "https://www.aljazeera.com/news/2026/9/13/kosovo-approves-new-government-after-months-of-political-deadlock?traffic_source=rss": "2026-09-13T18:00:10.158446+00:00",
     "https://www.aljazeera.com/sports/2026/9/13/f1-leader-antonelli-wins-spanish-grand-prix-as-unlucky-norris-misses-out?traffic_source=rss": "2026-09-13T18:00:10.158446+00:00",
     "https://www.aljazeera.com/video/newsfeed/2026/9/13/six-killed-130-missing-after-indonesian-passenger-ship-capsizes?traffic_source=rss": "2026-09-13T18:00:10.158446+00:00",
-    "https://www.theverge.com/entertainment/994415/the-units-digital-stimulation-synthpunk-review": "2026-09-13T18:00:10.158446+00:00"
+    "https://www.theverge.com/entertainment/994415/the-units-digital-stimulation-synthpunk-review": "2026-09-13T18:00:10.158446+00:00",
+    "https://www.teslarati.com/spacex-ses-03b-network-vs-starlink/": "2026-09-13T20:00:22.596511+00:00",
+    "https://www.nytimes.com/2026/09/13/business/guidepost-montessori-higher-ground-education-ray-girn.html": "2026-09-13T20:00:22.596511+00:00",
+    "https://www.nytimes.com/2026/09/13/opinion/emmy-comedy-nominees-tv.html": "2026-09-13T20:00:22.596511+00:00",
+    "https://www.nytimes.com/2026/09/13/world/asia/nepal-tibet-floods-school-children.html": "2026-09-13T20:00:22.596511+00:00",
+    "https://www.bbc.co.uk/news/articles/cwyzp47py48o?at_medium=RSS&at_campaign=rss": "2026-09-13T20:00:22.596511+00:00",
+    "https://www.aljazeera.com/video/newsfeed/2026/9/13/israeli-raid-targets-palestinian-journalist-ali-al-samoudis-home?traffic_source=rss": "2026-09-13T20:00:22.596511+00:00",
+    "https://www.aljazeera.com/news/2026/9/13/centre-left-opposition-bloc-leads-in-swedish-vote-poll-shows?traffic_source=rss": "2026-09-13T20:00:22.596511+00:00",
+    "https://www.aljazeera.com/opinions/2026/9/13/bangsamoros-parliamentary-election-is-a-turning-point?traffic_source=rss": "2026-09-13T20:00:22.596511+00:00",
+    "https://www.aljazeera.com/sports/2026/9/13/haaland-goal-sees-10-men-city-beat-united-in-controversial-manchester-derby?traffic_source=rss": "2026-09-13T20:00:22.596511+00:00",
+    "https://www.aljazeera.com/video/newsfeed/2026/9/13/09-13-syrian-child-explosion-clip-mp4?traffic_source=rss": "2026-09-13T20:00:22.596511+00:00",
+    "https://www.aljazeera.com/economy/2026/9/13/trump-tells-zelenskyy-to-stop-hitting-russian-diesel-supplies?traffic_source=rss": "2026-09-13T20:00:22.596511+00:00",
+    "https://www.theverge.com/tech/994426/apple-iphone-game-controllers": "2026-09-13T20:00:22.596511+00:00"
   },
-  "last_success": "2026-09-14T02:00:22.969261"
+  "last_success": "2026-09-14T04:00:37.408419"
 }
