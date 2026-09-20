@@ -1,14 +1,5 @@
 {
   "seen": {
-    "https://finance.technews.tw/2026/09/13/why-yonex-defied-the-trend-to-surpass-100-billion-yen-in-revenue/": "2026-09-13T04:00:42.754590+00:00",
-    "https://technews.tw/2026/09/13/tesla-roadster2-reveal/": "2026-09-13T04:00:42.754590+00:00",
-    "https://infosecu.technews.tw/2026/09/13/medical-ai-privacy-crisis/": "2026-09-13T04:00:42.754590+00:00",
-    "https://infosecu.technews.tw/2026/09/13/identity-verification-could-lead-meta-to-collect-more-data/": "2026-09-13T04:00:42.754590+00:00",
-    "https://www.aljazeera.com/news/2026/9/13/one-dead-more-than-30-missing-after-vanuatu-ferry-sinks-pms-office-says?traffic_source=rss": "2026-09-13T04:00:42.754590+00:00",
-    "https://www.aljazeera.com/video/newsfeed/2026/9/13/yemens-houthis-seize-strategic-mayun-island-in-red-sea?traffic_source=rss": "2026-09-13T04:00:42.754590+00:00",
-    "https://www.aljazeera.com/video/newsfeed/2026/9/13/we-started-to-plummet-turbulence-rocks-turkish-airlines-flight?traffic_source=rss": "2026-09-13T04:00:42.754590+00:00",
-    "https://www.aljazeera.com/news/2026/9/13/iraq-seizes-drone-launching-platform-used-for-targeting-saudi-oil-pipeline?traffic_source=rss": "2026-09-13T04:00:42.754590+00:00",
-    "https://www.aljazeera.com/news/2026/9/13/why-spains-new-sahrawi-citizenship-law-matters-to-morocco?traffic_source=rss": "2026-09-13T04:00:42.754590+00:00",
     "https://finance.technews.tw/2026/09/13/furniture-magnate-no-layoffs-iphones-3-3-billion-ai-factory-employee-care/": "2026-09-13T06:00:55.496958+00:00",
     "https://technews.tw/2026/09/13/sceye-softbank/": "2026-09-13T06:00:55.496958+00:00",
     "https://technews.tw/2026/09/13/france-speeds-up-rafale-f5-upgrades-after-fcas-ended/": "2026-09-13T06:00:55.496958+00:00",
@@ -1910,7 +1901,23 @@
     "https://www.aljazeera.com/video/newsfeed/2026/9/20/peruvian-journalist-shot-dead-after-threatening-to-expose-police?traffic_source=rss": "2026-09-20T04:00:28.726143+00:00",
     "https://www.aljazeera.com/news/2026/9/20/ed-sheeran-calls-gaza-situation-unjustifiable-after-palestine-controversy?traffic_source=rss": "2026-09-20T04:00:28.726143+00:00",
     "https://www.aljazeera.com/news/2026/9/20/australia-seeks-big-tech-support-for-internet-safety-ai-regulation?traffic_source=rss": "2026-09-20T04:00:28.726143+00:00",
-    "https://www.aljazeera.com/video/inside-story/2026/9/20/how-much-of-a-challenge-recurrent-bombings-to-pakistan?traffic_source=rss": "2026-09-20T04:00:28.726143+00:00"
+    "https://www.aljazeera.com/video/inside-story/2026/9/20/how-much-of-a-challenge-recurrent-bombings-to-pakistan?traffic_source=rss": "2026-09-20T04:00:28.726143+00:00",
+    "https://technews.tw/2026/09/20/andrew-ng-says-ai-is-bad-for-learning/": "2026-09-20T06:00:41.047563+00:00",
+    "https://technews.tw/2026/09/20/gen-precision-brings-custom-fau-testing-into-mass-production-testing/": "2026-09-20T06:00:41.047563+00:00",
+    "https://technews.tw/2026/09/20/a-3-year-olds-metastatic-cancer-disappeared-after-two-doses-of-experimental-therapy/": "2026-09-20T06:00:41.047563+00:00",
+    "https://technews.tw/2026/09/20/blizzard-has-not-given-up-on-heroes-of-the-storm/": "2026-09-20T06:00:41.047563+00:00",
+    "https://finance.technews.tw/2026/09/20/taiwan-mobile-nada/": "2026-09-20T06:00:41.047563+00:00",
+    "https://www.nytimes.com/2026/09/20/opinion/ai-ban-self-improvement-recursive-models.html": "2026-09-20T06:00:41.047563+00:00",
+    "https://www.nytimes.com/2026/09/20/opinion/end-american-exceptionalism.html": "2026-09-20T06:00:41.047563+00:00",
+    "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo?at_medium=RSS&at_campaign=rss": "2026-09-20T06:00:41.047563+00:00",
+    "https://www.bbc.co.uk/news/videos/ck980m0pr1e0o?at_medium=RSS&at_campaign=rss": "2026-09-20T06:00:41.047563+00:00",
+    "https://www.bbc.co.uk/news/videos/ckd68l9g0gy5o?at_medium=RSS&at_campaign=rss": "2026-09-20T06:00:41.047563+00:00",
+    "https://www.aljazeera.com/video/newsfeed/2026/9/20/journalists-locked-out-of-the-white-house-after-trump-ban?traffic_source=rss": "2026-09-20T06:00:41.047563+00:00",
+    "https://www.aljazeera.com/news/2026/9/20/two-german-states-go-to-the-polls-after-far-right-gains?traffic_source=rss": "2026-09-20T06:00:41.047563+00:00",
+    "https://www.aljazeera.com/video/newsfeed/2026/9/20/jammertest-arctic-exercise-to-counter-satellite-jamming?traffic_source=rss": "2026-09-20T06:00:41.047563+00:00",
+    "https://www.aljazeera.com/news/2026/9/20/state-funeral-honours-hong-kongs-first-post-colonial-leader-tung-chee-hwa?traffic_source=rss": "2026-09-20T06:00:41.047563+00:00",
+    "https://www.aljazeera.com/news/2026/9/20/tunisian-protesters-demand-release-of-four-sumud-activists?traffic_source=rss": "2026-09-20T06:00:41.047563+00:00",
+    "https://www.aljazeera.com/video/by-the-numbers-3/2026/9/20/how-did-the-us-recall-a-billion-products-in-six-months?traffic_source=rss": "2026-09-20T06:00:41.047563+00:00"
   },
-  "last_success": "2026-09-20T12:00:41.516812"
+  "last_success": "2026-09-20T14:00:53.254709"
 }
