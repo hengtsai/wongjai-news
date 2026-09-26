@@ -1,20 +1,5 @@
 {
   "seen": {
-    "https://openai.com/index/hex-gpt-6-astra": "2026-09-19T00:00:32.272646+00:00",
-    "https://finance.technews.tw/2026/09/19/juokuelectronics/": "2026-09-19T00:00:32.272646+00:00",
-    "https://www.nytimes.com/2026/09/18/us/politics/trump-bans-media-white-house.html": "2026-09-19T00:00:32.272646+00:00",
-    "https://www.nytimes.com/2026/09/18/us/politics/trump-greenland.html": "2026-09-19T00:00:32.272646+00:00",
-    "https://www.nytimes.com/2026/09/18/us/politics/republicans-elitist-party-voters-poll.html": "2026-09-19T00:00:32.272646+00:00",
-    "https://www.nytimes.com/2026/09/18/us/politics/appeals-court-trump-third-country-deportation.html": "2026-09-19T00:00:32.272646+00:00",
-    "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss": "2026-09-19T00:00:32.272646+00:00",
-    "https://www.bbc.co.uk/news/articles/cwp93k9gpnv1o?at_medium=RSS&at_campaign=rss": "2026-09-19T00:00:32.272646+00:00",
-    "https://www.bbc.co.uk/news/articles/cjkg71e67k17o?at_medium=RSS&at_campaign=rss": "2026-09-19T00:00:32.272646+00:00",
-    "https://www.bbc.co.uk/news/articles/cw5y4jz6k2p3o?at_medium=RSS&at_campaign=rss": "2026-09-19T00:00:32.272646+00:00",
-    "https://www.bbc.co.uk/news/articles/c670lkvdzkn2o?at_medium=RSS&at_campaign=rss": "2026-09-19T00:00:32.272646+00:00",
-    "https://www.aljazeera.com/video/newsfeed/2026/9/18/super-macklemore-64-video-game-mocks-sheeran-concert-controversy?traffic_source=rss": "2026-09-19T00:00:32.272646+00:00",
-    "https://www.aljazeera.com/news/2026/9/18/houthis-accuse-saudi-arabia-of-launching-26-strikes-in-24-hours?traffic_source=rss": "2026-09-19T00:00:32.272646+00:00",
-    "https://www.aljazeera.com/news/2026/9/18/trump-claims-deal-with-denmark-gives-us-permanent-control-over-greenland?traffic_source=rss": "2026-09-19T00:00:32.272646+00:00",
-    "https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report/": "2026-09-19T00:00:32.272646+00:00",
     "https://technews.tw/2026/09/19/tsmc-high-na-euv/": "2026-09-19T02:00:46.328102+00:00",
     "https://technews.tw/2026/09/19/ai-posing-app-superpose/": "2026-09-19T02:00:46.328102+00:00",
     "https://infosecu.technews.tw/2026/09/19/hacking/": "2026-09-19T02:00:46.328102+00:00",
@@ -1980,7 +1965,21 @@
     "https://www.bbc.co.uk/news/videos/cq14d142p08do?at_medium=RSS&at_campaign=rss": "2026-09-26T00:00:05.414414+00:00",
     "https://www.aljazeera.com/news/2026/9/25/pope-leo-xiv-warns-ai-could-undermine-humanity-during-france-visit?traffic_source=rss": "2026-09-26T00:00:05.414414+00:00",
     "https://www.aljazeera.com/video/newsfeed/2026/9/25/iran-to-reopen-strait-of-hormuz-within-a-week-if-us-agrees-to-plan?traffic_source=rss": "2026-09-26T00:00:05.414414+00:00",
-    "https://www.aljazeera.com/news/2026/9/25/dr-congos-ebola-outbreak-spreads-to-two-new-health-zones-who-says?traffic_source=rss": "2026-09-26T00:00:05.414414+00:00"
+    "https://www.aljazeera.com/news/2026/9/25/dr-congos-ebola-outbreak-spreads-to-two-new-health-zones-who-says?traffic_source=rss": "2026-09-26T00:00:05.414414+00:00",
+    "https://technews.tw/2026/09/26/amazon-rainforest-conservation/": "2026-09-26T02:00:17.574545+00:00",
+    "https://technews.tw/2026/09/26/us-small-modular-reactors-accelerate-again-tennessee-bwrx-300-reportedly-could-receive-construction-permit-early-next-week/": "2026-09-26T02:00:17.574545+00:00",
+    "https://technews.tw/2026/09/26/copilot-home-code-autopilot/": "2026-09-26T02:00:17.574545+00:00",
+    "https://finance.technews.tw/2026/09/26/ai-compute-competition-pivots-intelligent-power-management-architectural-optimization-dual-track-battlefield/": "2026-09-26T02:00:17.574545+00:00",
+    "https://finance.technews.tw/2026/09/26/delta-profit-57-teco-revives-20-year-factory-asean-taiwanese-ai-southbound-now-building-real-plants/": "2026-09-26T02:00:17.574545+00:00",
+    "https://www.nytimes.com/2026/09/25/style/china-state-dinner-melania-trump-pants.html": "2026-09-26T02:00:17.574545+00:00",
+    "https://www.nytimes.com/2026/09/25/weather/noreaster-hurricane-definition.html": "2026-09-26T02:00:17.574545+00:00",
+    "https://www.nytimes.com/2026/09/25/us/el-nino-california-beach-erosion.html": "2026-09-26T02:00:17.574545+00:00",
+    "https://www.aljazeera.com/news/2026/9/26/plane-crash-in-dr-congo-kills-more-than-a-dozen?traffic_source=rss": "2026-09-26T02:00:17.574545+00:00",
+    "https://www.aljazeera.com/news/2026/9/26/facebook-found-liable-as-tiktok-settles-for-100m-over-user-safety?traffic_source=rss": "2026-09-26T02:00:17.574545+00:00",
+    "https://www.aljazeera.com/video/newsfeed/2026/9/26/pro-imran-khan-rally-delayed-amid-government-closures?traffic_source=rss": "2026-09-26T02:00:17.574545+00:00",
+    "https://www.aljazeera.com/news/liveblog/2026/9/26/iran-war-live-tehran-offers-us-plan-to-reopen-hormuz-within-seven-days?traffic_source=rss": "2026-09-26T02:00:17.574545+00:00",
+    "https://www.aljazeera.com/news/2026/9/25/us-court-rules-against-kalshi-says-states-can-regulate-prediction-markets?traffic_source=rss": "2026-09-26T02:00:17.574545+00:00",
+    "https://www.aljazeera.com/news/2026/9/25/iran-says-it-awaits-us-response-on-seven-day-roadmap-to-end-war?traffic_source=rss": "2026-09-26T02:00:17.574545+00:00"
   },
-  "last_success": "2026-09-26T08:00:17.537708"
+  "last_success": "2026-09-26T10:00:30.576551"
 }
