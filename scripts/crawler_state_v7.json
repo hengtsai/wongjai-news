@@ -1,17 +1,5 @@
 {
   "seen": {
-    "https://www.nytimes.com/2026/10/25/world/americas/who-is-maria-corina-machado.html": "2026-10-25T22:00:05.967355+00:00",
-    "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss": "2026-10-25T22:00:05.967355+00:00",
-    "https://www.aljazeera.com/news/2026/10/25/marine-le-pen-vows-a-french-renaissance-as-far-right-eyes-seat-of-power?traffic_source=rss": "2026-10-25T22:00:05.967355+00:00",
-    "https://www.aljazeera.com/news/2026/10/25/us-attorney-general-todd-blanche-defends-alaska-senate-election-lawsuit?traffic_source=rss": "2026-10-25T22:00:05.967355+00:00",
-    "https://www.aljazeera.com/video/newsfeed/2026/10/25/marine-le-pen-launches-french-presidential-campaign?traffic_source=rss": "2026-10-25T22:00:05.967355+00:00",
-    "https://www.aljazeera.com/video/newsfeed/2026/10/25/trump-vs-california?traffic_source=rss": "2026-10-25T22:00:05.967355+00:00",
-    "https://www.aljazeera.com/news/2026/10/25/kenya-bus-crash-kills-at-least-24-as-government-vows-road-safety-crackdown?traffic_source=rss": "2026-10-25T22:00:05.967355+00:00",
-    "https://www.aljazeera.com/sports/2026/10/25/can-carrick-survive-man-united-slump-and-fernandes-fallout?traffic_source=rss": "2026-10-25T22:00:05.967355+00:00",
-    "https://www.aljazeera.com/news/liveblog/2026/10/25/brazil-election-results-2026-live-polls-close-in-lula-bolsonaro-face-off?traffic_source=rss": "2026-10-25T22:00:05.967355+00:00",
-    "https://www.theverge.com/tech/1018233/ifixit-iphone-duo-teardown-repairability-hinge": "2026-10-25T22:00:05.967355+00:00",
-    "https://www.theverge.com/entertainment/1018300/scott-walker-the-drift-music-album-review": "2026-10-25T22:00:05.967355+00:00",
-    "https://www.theverge.com/tech/1018290/dissected-iphone-duo-crackgate-hinge-screen": "2026-10-25T22:00:05.967355+00:00",
     "https://www.nytimes.com/2026/10/25/us/politics/obama-trump-competing-rallies-midterms.html": "2026-10-26T00:00:06.033297+00:00",
     "https://www.nytimes.com/2026/10/25/world/europe/serbia-vucic-election-defeat.html": "2026-10-26T00:00:06.033297+00:00",
     "https://www.nytimes.com/2026/10/25/business/how-to-straddle-the-maga-divide.html": "2026-10-26T00:00:06.033297+00:00",
@@ -2077,7 +2065,20 @@
     "https://www.aljazeera.com/news/2026/11/1/france-opens-attempted-murder-probe-into-molotov-attacks-on-police?traffic_source=rss": "2026-11-01T20:00:10.314110+00:00",
     "https://www.aljazeera.com/news/2026/11/1/michigan-dem-haley-stevens-endorses-republican-senate-candidate-mike-rogers?traffic_source=rss": "2026-11-01T20:00:10.314110+00:00",
     "https://www.aljazeera.com/news/2026/11/1/sullivan-vows-to-honour-alaska-race-outcome-us-judge-dismisses-doj-lawsuit?traffic_source=rss": "2026-11-01T20:00:10.314110+00:00",
-    "https://www.aljazeera.com/news/2026/11/1/israels-first-ambassador-to-somaliland-presents-credentials-in-hargeisa?traffic_source=rss": "2026-11-01T20:00:10.314110+00:00"
+    "https://www.aljazeera.com/news/2026/11/1/israels-first-ambassador-to-somaliland-presents-credentials-in-hargeisa?traffic_source=rss": "2026-11-01T20:00:10.314110+00:00",
+    "https://www.tomshardware.com/tech-industry/cyber-security/new-ai-driven-windows-malware-feeds-stolen-data-to-claude-to-rank-victims-assets-by-value-then-deletes-itself-payload-builds-custom-target-assessment-can-switch-models-if-one-refuses-or-skip-the-ai-step-entirely": "2026-11-01T22:00:10.437627+00:00",
+    "https://www.nytimes.com/2026/11/01/us/florida-plane-crash-palm-beach-county.html": "2026-11-01T22:00:10.437627+00:00",
+    "https://www.aljazeera.com/video/newsfeed/2026/11/1/democrat-haley-stevens-heckled-as-she-backs-el-sayed-rival?traffic_source=rss": "2026-11-01T22:00:10.437627+00:00",
+    "https://www.aljazeera.com/video/newsfeed/2026/11/1/thousands-displaced-from-hebron-as-israel-carries-on-siege?traffic_source=rss": "2026-11-01T22:00:10.437627+00:00",
+    "https://www.aljazeera.com/news/2026/11/1/carney-signals-progress-on-canada-us-trade-deal-talks-as-midterms-loom?traffic_source=rss": "2026-11-01T22:00:10.437627+00:00",
+    "https://www.aljazeera.com/news/2026/11/1/why-did-democrat-haley-stevens-just-endorse-a-republican-for-us-senate?traffic_source=rss": "2026-11-01T22:00:10.437627+00:00",
+    "https://www.aljazeera.com/video/newsfeed/2026/11/1/al-jazeera-director-general-hails-30-years-of-groundbreaking-news?traffic_source=rss": "2026-11-01T22:00:10.437627+00:00",
+    "https://www.aljazeera.com/news/2026/11/1/bulgarian-president-yotova-leads-runoff-exit-polls-show?traffic_source=rss": "2026-11-01T22:00:10.437627+00:00",
+    "https://www.aljazeera.com/video/newsfeed/2026/11/1/police-clash-with-housing-crisis-protesters-in-portugal?traffic_source=rss": "2026-11-01T22:00:10.437627+00:00",
+    "https://www.aljazeera.com/video/newsfeed/2026/11/1/al-jazeera-celebrates-30th-anniversary?traffic_source=rss": "2026-11-01T22:00:10.437627+00:00",
+    "https://www.aljazeera.com/video/newsfeed/2026/11/1/video-captures-house-collapsing-due-to-ecuador-floods?traffic_source=rss": "2026-11-01T22:00:10.437627+00:00",
+    "https://www.theverge.com/science/1024239/nasa-commercial-space-save-hubble": "2026-11-01T22:00:10.437627+00:00",
+    "https://www.theverge.com/tech/1024232/flock-ignoring-cancel-contracts": "2026-11-01T22:00:10.437627+00:00"
   },
-  "last_success": "2026-11-02T04:00:23.163583"
+  "last_success": "2026-11-02T06:00:22.390202"
 }
